@@ -1,0 +1,28 @@
+rustc main.rs
+
+main.exe
+
+使用Cargo创建项目： cargo new hello_cargo
+-- 项目的名字也是 hello_cargo
+-- 会创建一个新的目录 hello_cargo
+-- Cargo.toml
+-- src 目录
+   -- main.rs
+
+1. Cargo.toml
+`toml (Tom's Obvious,Minimal Language) 格式，是 Cargo 的配置格式
+`[pacakge]，是一个区域标题，表示下方内容是用来配置包（package）的
+·name 项目名
+·version 项目版本
+·authors 项目作者
+·edition 使用的rust版本
+`[dependencies]，另一个区域的开始，它会列出项目的依赖项
+`在 Rust 里面，代码的包称作 crate
+2. cargo build
+-- cargo bulid --release 为发布构建 代码会运行更快，编译时间较长
+3. cargo run 编译+运行
+4. cargo check 检查代码，确保能通过编译，不产生文件
+
+5. cargo update
+6. rustup doc
+7. cargo doc --open 本地 crate 文档
